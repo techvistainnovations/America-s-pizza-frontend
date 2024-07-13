@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div{
+h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div, s{
     @apply font-poppins;
 }
 
@@ -9,6 +9,14 @@ h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div{
 /* main menu for desktop */
 .main-menu li{
     @apply text-whiteColor text-[14px]
+}
+
+.allow2Line{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
 }
 
 /* home Banner */

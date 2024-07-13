@@ -16,6 +16,11 @@ export default {
     colors : {
       themeColor : '#F47820',
       whiteColor : '#ffffff',
+      vegColor : '#97BE5A',
+      nonVegColor : '#C80036',
+      black : '#000000',
+      red : '#ff0000',
+      descColor : '#848484'
     },
     fontFamily : {
       openSans: ["Open Sans", 'sans-serif'],

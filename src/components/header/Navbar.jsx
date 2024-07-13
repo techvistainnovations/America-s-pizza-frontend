@@ -14,6 +14,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { IoMdLogIn } from "react-icons/io";
 import { CgMenuRight } from "react-icons/cg";
 import Drawer from '@mui/material/Drawer';
+import { Fade as Hamburger } from 'hamburger-react'
 
 const menuItems = [
   {name: 'Store Locator', to : '/'},
@@ -66,7 +67,8 @@ const Navbar = () => {
       </ul>
       <div className='lg:hidden gap-4 md:flex items-center flex'>
           <IoMdLogIn className='text-3xl text-whiteColor cursor-pointer'></IoMdLogIn>
-          <CgMenuRight onClick={toggleDrawer(true)} className='text-3xl text-whiteColor cursor-pointer'></CgMenuRight> 
+          {/* <CgMenuRight onClick={toggleDrawer(true)} className='text-3xl text-whiteColor cursor-pointer'></CgMenuRight>  */}
+          <Hamburger color="#fff" toggled={open} toggle={setOpen} />
           <Drawer open={open} onClose={toggleDrawer(false)}>
             {DrawerList}
           </Drawer>
