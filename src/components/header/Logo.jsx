@@ -10,7 +10,7 @@ const Logo = () => {
                 <Link to={'/'}>
                 <div className='flex gap-2'>
                     <span>Raja Park, Jaipur</span>
-                    
+                     
                 </div>
                 </Link>
             </div>
