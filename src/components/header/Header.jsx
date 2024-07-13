@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-    <header className='bg-themeColor py-4'>
+    <header className='bg-themeColor fixed top-0 left-0 right-0 w-full z-[99999999] py-4 drop-shadow-md'>
       <div className='container mx-auto'>
         <div className="flex justify-between items-center">
           <Logo/>
@@ -29,7 +29,6 @@ const Header = () => {
         </div>
       </div>
     </header>
-    
     </>
 
     // <div>
