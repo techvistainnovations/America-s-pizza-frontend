@@ -68,6 +68,39 @@ const featuredItem = [
         isVegFlag : 0,
         isAddedToCart : true,
     },
+    {
+        id : 7,
+        title : 'Farm Aloo Tikki Meal',
+        desc : 'Elevate your Farm Aloo Tikki burger to a meal',
+        image : 'src/assets/images/ui/image-914849-1644511269.jpeg',
+        currency : '₹',
+        price : '115',
+        fakePrice : '',
+        isVegFlag : 0,
+        isAddedToCart : false,
+    },
+    {
+        id : 8,
+        title : 'Farm Spicy Chicken Wrap',
+        desc : 'Spicy chicken patty served whole in this wrap',
+        image : 'src/assets/images/ui/image-833968-1644510327.jpeg',
+        currency : '₹',
+        price : '172',
+        fakePrice : '299',
+        isVegFlag : 2,
+        isAddedToCart : false,
+    },
+    {
+        id : 9,
+        title : 'Farm Grilled Chicken',
+        desc : 'Experience the perfect harmony of flavors in our',
+        image : 'src/assets/images/ui/image-423541-1677054193.jpeg',
+        currency : '₹',
+        price : '149',
+        fakePrice : '',
+        isVegFlag : 2,
+        isAddedToCart : false,
+    },
 ]
 
 const FeaturedItems = () => {
@@ -84,6 +117,11 @@ const FeaturedItems = () => {
                         )
                     })
                 }
+            </div>
+            <div className='flex justify-center pt-6'>
+                <button className='primary_btn uppercase'>
+                    Explore Full Menu
+                </button>
             </div>
         </div>
       </section>

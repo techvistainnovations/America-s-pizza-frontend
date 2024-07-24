@@ -12,7 +12,7 @@ const FeaturedItem = (props) => {
   return ( 
     <div className='flex md:max-h-auto sm:max-h-[150px] max-h-[150px] hover:drop-shadow-md transition-all w-full drop-shadow bg-whiteColor rounded-lg overflow-hidden'>
         <Link to={'/'} className='w-[40%]'>
-            <img src={props.itemData.image} alt={props.itemData.title}  className='w-full h-full object-cover'/>
+            <img src={props.itemData.image} alt={props.itemData.title} loading="lazy" className='w-full h-full object-cover'/>
         </Link>
         <div className='flex-1 relative p-3 pb-14'>
              <Tooltip TransitionComponent={Zoom} title={props.itemData.title}>
@@ -44,5 +44,4 @@ const FeaturedItem = (props) => {
     </div>
   )
 }
-
 export default FeaturedItem
