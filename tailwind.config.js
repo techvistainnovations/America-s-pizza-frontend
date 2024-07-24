@@ -11,7 +11,8 @@ export default {
     extend: {},
     backgroundImage: {
       'home-banner-bg' : "url('./src/assets/images/ui/desktop-burger-farm-banner.jpg')",
-      'fries-icon' : "url('./src/assets/images/ui/fries-icon.png')"
+      'fries-icon' : "url('./src/assets/images/ui/fries-icon.png')",
+      'bulk-order-banner':"url('./src/assets//images/ui/image-265741-1720244133.jpeg')"
     },
     colors : {
       themeColor : '#F47820',
