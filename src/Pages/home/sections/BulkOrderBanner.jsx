@@ -4,7 +4,7 @@ const BulkOrderBanner = () => {
   return (
     <div className='container mx-auto px-0 py-[20px]'>
      <div className="cursor-pointer">
-      <img src="./src/assets//images/ui/image-265741-1720244133.jpeg" className='w-full drop-shadow-lg rounded-lg' alt="" />
+      <img src="/images/ui/image-265741-1720244133.jpeg" className='w-full drop-shadow-lg rounded-lg' alt="" />
      </div>
     </div>
   )

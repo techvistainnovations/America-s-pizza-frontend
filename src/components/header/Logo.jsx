@@ -4,7 +4,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const Logo = () => {
     return (
         <div className='flex gap-2 items-center'>
-            <Link to={'/'}><h1><img className='w-[55px] h-[55px]' src="src/assets/images/logo/logo.png" alt="logo-image" title="logog" /></h1></Link>
+            <Link to={'/'}><h1><img className='w-[55px] h-[55px]' src="/images/logo/logo.png" alt="logo-image" title="logog" /></h1></Link>
             <div>
                 <span className='font-poppins text-whiteColor font-extralight text-[11px]'>Change Out</span>
                 <Link to={'/'}>
