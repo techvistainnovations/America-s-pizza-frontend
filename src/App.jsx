@@ -5,10 +5,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/home/Home'
 import Header from './components/header/Header'
 import About from './Pages/About'
-import Footer from './Pages/Footer'
 import Menu from './Pages/Menu'
 import Locations from './Pages/Locations'
 import Blog from './Pages/Blog'
+import StoreLocator from './Pages/Store-locator/StoreLocator'
+import Footer from './components/Footer/Footer'
+
 
 function App() {
 
@@ -19,12 +21,13 @@ function App() {
    <Header/>
    <Routes>
     <Route path='/' element={<Home/>} />
+    <Route path='store-locator' element={<StoreLocator/>} />
     <Route path='Menu' element={<Menu/>} />
     <Route path='Locations' element={<Locations/>} />
     <Route path='About' element={<About/>} />
     <Route path='Blog' element={<Blog/>} />
    </Routes>
-   {/* <Footer/> */}
+   <Footer></Footer>
    </BrowserRouter>
     </>
   )

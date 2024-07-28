@@ -17,7 +17,7 @@ import Drawer from '@mui/material/Drawer';
 import { Fade as Hamburger } from 'hamburger-react'
 
 const menuItems = [
-  {name: 'Store Locator', to : '/'},
+  {name: 'Store Locator', to : 'store-locator'},
   {name: 'Order Now', to : '/'},
   {name: 'Franchise Enquiry', to : '/'},
   {name: 'Bulk Orders', to : '/'},

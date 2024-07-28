@@ -16,7 +16,7 @@ export default {
       'bulk-order-banner':"url('/images/ui/image-265741-1720244133.jpeg')"
     },
     colors : {
-      themeColor : '#F47820',
+      themeColor : '#03346E',
       whiteColor : '#ffffff',
       vegColor : '#97BE5A',
       nonVegColor : '#C80036',
@@ -24,7 +24,8 @@ export default {
       red : '#ff0000',
       blackLabel : '#201C1D',
       darkbg: '#323231',
-      descColor : '#848484'
+      descColor : '#848484',
+      lightBorder : '#00000020'
     },
     fontFamily : {
       openSans: ["Open Sans", 'sans-serif'],

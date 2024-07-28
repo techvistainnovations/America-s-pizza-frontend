@@ -5,7 +5,6 @@ import HomeSlider from './sections/HomeSlider';
 import BulkOrderBanner from './sections/BulkOrderBanner';
 import LetsGetOrdering from './sections/LetsGetOrdering';
 import GetAppSection from './sections/GetAppSection';
-import Footer from './sections/Footer';
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
       <BulkOrderBanner/>
       <LetsGetOrdering></LetsGetOrdering>
       <GetAppSection></GetAppSection>
-      <Footer></Footer>
     </div>
     </>
   )

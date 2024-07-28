@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className='bg-whiteColor py-3 flex'>
-                <div className='mx-auto text-themeColor flex items-center gap-2'> <FaCopyright className='text-darkbg'></FaCopyright> </div>
+                <div className='mx-auto text-themeColor flex items-center gap-2'> <FaCopyright className='text-darkbg'></FaCopyright> <span> Copyright. All Rights Reserved</span> </div>
             </div>
         </>
     )

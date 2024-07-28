@@ -21,11 +21,12 @@ h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div, s{
 
 /* home Banner */
 .home_banner{
-    @apply bg-home-banner-bg bg-cover bg-center;
+    /* @apply bg-home-banner-bg bg-cover bg-center; */
+    @apply bg-themeColor bg-cover bg-center;
 }
 .home_banner::after {
     content: "";
-    @apply absolute top-0 left-0 bg-fries-icon md:w-[90px] sm:w-[65px] w-[50px] h-full z-10 block bg-contain bg-no-repeat;
+    /* @apply absolute top-0 left-0 bg-fries-icon md:w-[90px] sm:w-[65px] w-[50px] h-full z-10 block bg-contain bg-no-repeat; */
 }
 
 .primary_btn{
