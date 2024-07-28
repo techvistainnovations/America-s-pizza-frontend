@@ -12,6 +12,7 @@ export default {
     backgroundImage: {
       'home-banner-bg' : "url('./src/assets/images/ui/desktop-burger-farm-banner.jpg')",
       'fries-icon' : "url('./src/assets/images/ui/fries-icon.png')",
+      'orange-fries-icon' : "url('./src/assets/images/ui/bite-into-savings.jpg')",
       'bulk-order-banner':"url('./src/assets//images/ui/image-265741-1720244133.jpeg')"
     },
     colors : {
@@ -21,6 +22,8 @@ export default {
       nonVegColor : '#C80036',
       black : '#000000',
       red : '#ff0000',
+      blackLabel : '#201C1D',
+      darkbg: '#323231',
       descColor : '#848484'
     },
     fontFamily : {

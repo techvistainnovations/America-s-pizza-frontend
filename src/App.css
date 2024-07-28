@@ -31,3 +31,21 @@ h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div, s{
 .primary_btn{
     @apply bg-themeColor text-whiteColor px-8 font-semibold text-base py-2 rounded-[60px] hover:bg-black hover:text-whiteColor transition-all duration-200;
 }
+
+.shadow-get-ordering{
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
+}
+.LetsGetOrdering button.active{
+    @apply border-themeColor text-themeColor
+}
+.bite-into-savings::after{
+    content: "";
+    @apply bg-orange-fries-icon absolute bottom-0 left-[50%] translate-x-[-50%] z-10 w-[135px] h-[16px] bg-center bg-contain;
+}
+footer h4{
+    @apply lg:text-sm md:text-[13px] text-[12px] pb-2 mb-3 text-whiteColor font-medium relative;
+}
+footer h4::after{
+    content: "";
+    @apply absolute block bottom-0 left-0 w-[50px] h-[1px] bg-whiteColor;
+}
