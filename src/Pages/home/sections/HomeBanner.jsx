@@ -16,7 +16,7 @@ const HomeBanner  = () => {
                     </div>
                     {/* right part */}
                     <div className='d:w-1/2 sm:w-full w-full flex flex-1 h-full md:mt-0 sm:mt-0 mt-4'>
-                        <img className='w-full object-contain' src="/src/assets/images/ui/burger-burger-farm.png" alt="" />
+                        <img className='w-full object-contain' src="/images/ui/burger-burger-farm.png" alt="" />
                     </div>
                 </div>
             </div>
