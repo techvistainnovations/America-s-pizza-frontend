@@ -10,10 +10,10 @@ export default {
   theme: {
     extend: {},
     backgroundImage: {
-      'home-banner-bg' : "url('./src/assets/images/ui/desktop-burger-farm-banner.jpg')",
-      'fries-icon' : "url('./src/assets/images/ui/fries-icon.png')",
-      'orange-fries-icon' : "url('./src/assets/images/ui/bite-into-savings.jpg')",
-      'bulk-order-banner':"url('./src/assets//images/ui/image-265741-1720244133.jpeg')"
+      'home-banner-bg' : "url('./public/images/ui/desktop-burger-farm-banner.jpg')",
+      'fries-icon' : "url('./public/assets/images/ui/fries-icon.png')",
+      'orange-fries-icon' : "url('./public/assets/images/ui/bite-into-savings.jpg')",
+      'bulk-order-banner':"url('./public/assets//images/ui/image-265741-1720244133.jpeg')"
     },
     colors : {
       themeColor : '#F47820',

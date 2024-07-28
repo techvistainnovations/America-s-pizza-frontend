@@ -25,12 +25,12 @@ const Footer = () => {
                         <div>
                             <h4>Payment Methods</h4>
                             <div className='grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-3 gap-2'>
-                                <img src="/src/assets/images/ui/cash-svg.svg" alt="cash" />
-                                <img src="/src/assets/images/ui/mastercard-svg.svg" alt="mastercard" />
-                                <img src="/src/assets/images/ui/gpay-svg.svg" alt="gpay" />
-                                <img src="/src/assets/images/ui/paytm-svg.svg" alt="paytm" />
-                                <img src="/src/assets/images/ui/visa-svg.svg" alt="visa" />
-                                <img src="/src/assets/images/ui/upi-icon.svg" alt="upi" />
+                                <img src="/images/ui/cash-svg.svg" alt="cash" />
+                                <img src="/images/ui/mastercard-svg.svg" alt="mastercard" />
+                                <img src="/images/ui/gpay-svg.svg" alt="gpay" />
+                                <img src="/images/ui/paytm-svg.svg" alt="paytm" />
+                                <img src="/images/ui/visa-svg.svg" alt="visa" />
+                                <img src="/images/ui/upi-icon.svg" alt="upi" />
                             </div>
                         </div>
                         <div>
