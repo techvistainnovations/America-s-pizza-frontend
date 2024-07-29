@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div, s{
     -webkit-box-orient: vertical;
 }
 
-/* home Banner */
+/* home Banner */ 
 .home_banner{
     /* @apply bg-home-banner-bg bg-cover bg-center; */
     @apply bg-themeColor bg-cover bg-center;
@@ -30,9 +30,15 @@ h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div, s{
 }
 
 .primary_btn{
-    @apply bg-themeColor text-whiteColor px-8 font-semibold text-base py-2 rounded-[60px] hover:bg-black hover:text-whiteColor transition-all duration-200;
+    @apply bg-themeColor text-whiteColor md:px-4 px-3 py-2  font-semibold md:text-base text-sm rounded-[60px] hover:drop-shadow-lg  hover:text-whiteColor transition-all duration-200;
 }
 
+.secondary_btn{
+    @apply bg-secondaryColor text-whiteColor md:px-4 px-3 font-semibold md:text-base text-sm py-2 rounded-[60px] hover:drop-shadow-lg  hover:text-whiteColor transition-all duration-200;
+}
+.card{
+    @apply border shadow-lg border-lightBorder rounded-lg;
+}
 .shadow-get-ordering{
     box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
 }
@@ -50,3 +56,6 @@ footer h4::after{
     content: "";
     @apply absolute block bottom-0 left-0 w-[50px] h-[1px] bg-whiteColor;
 }
+/* .primary-btn{
+    @apply bg-themeColor text-whiteColor px-6 py-2 rounded duration-200 hover:drop-shadow-lg;
+} */

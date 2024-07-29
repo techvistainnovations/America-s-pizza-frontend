@@ -17,6 +17,7 @@ export default {
     },
     colors : {
       themeColor : '#03346E',
+      secondaryColor : '#dc84cf',
       whiteColor : '#ffffff',
       vegColor : '#97BE5A',
       nonVegColor : '#C80036',

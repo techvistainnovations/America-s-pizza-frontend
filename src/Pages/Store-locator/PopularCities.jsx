@@ -21,15 +21,15 @@ const popularCitiesData = [
 
 function PopularCities() {
   return (
-    <div className='w-full my-5 border shadow-lg border-lightBorder rounded-lg'>
-        <h5 className='py-3 border-b border-lightBorder px-6 text-lg text-themeColor font-semibold'>Popular Cities</h5>
-        <div className='flex py-3 px-6 gap-3 flex-col'>
+    <div className='w-full card'>
+        <h5 className='py-3 border-b border-lightBorder lg:px-6 md:px-4 text-lg text-themeColor font-semibold'>Popular Cities</h5>
+        <div className='flex py-3 lg:px-6 md:px-4 gap-3 flex-col'>
         {
           popularCitiesData.map(city => {
             return (
-              <div className='flex items-center gap-2 text-blackLabel' key={city.id}>
-                <IoLocationOutline></IoLocationOutline>
-                <span>{city.title}</span>
+              <div className='flex items-start gap-2 text-blackLabel' key={city.id}>
+                <IoLocationOutline className='mt-1'></IoLocationOutline>
+                <span className='leading-6'>{city.title}</span>
               </div>
             )
           })
