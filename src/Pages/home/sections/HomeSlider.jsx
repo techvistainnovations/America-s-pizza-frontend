@@ -43,11 +43,11 @@ const HomeSlider = () => {
                 itemClass="carousel-item-padding-40-px px-1"
                 
             >
-                <div><img draggable="false" className='rounded-xl' loading="lazy" src="src/assets/images/ui/image-614598-1671521691.jpeg" alt="" /></div>
-                <div><img draggable="false" className='rounded-xl' loading="lazy" src="src/assets/images/ui/image-645888-1671521691.jpeg" alt="" /></div>
-                <div><img draggable="false" className='rounded-xl' loading="lazy" src="src/assets/images/ui/image-746571-1671521691.jpeg" alt="" /></div>
-                <div><img draggable="false" className='rounded-xl' loading="lazy" src="src/assets/images/ui/image-852353-1671521691.jpeg" alt="" /></div>
-                <div><img draggable="false" className='rounded-xl' loading="lazy" src="src/assets/images/ui/image-981361-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl' loading="lazy" src="/images/ui/image-614598-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl' loading="lazy" src="/images/ui/image-645888-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl' loading="lazy" src="/images/ui/image-746571-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl' loading="lazy" src="/images/ui/image-852353-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl' loading="lazy" src="/images/ui/image-981361-1671521691.jpeg" alt="" /></div>
             </Carousel>
         </section>
     )

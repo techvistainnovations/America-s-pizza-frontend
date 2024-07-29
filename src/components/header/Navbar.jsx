@@ -33,13 +33,13 @@ const Navbar = () => {
   };
 
   const DrawerList = (
-    <Box className='mt-[87px]' sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+    <Box className='mt-[87px]' sx={{ width: 250 }} a role="presentation" onClick={toggleDrawer(false)}>
       <List>
         {menuItems.map((item) => (
-          <ListItem key={item.name} disablePadding>
-            <ListItemButton>
+          <ListItem key={item.name} d isablePadding>
+            <Link className='pl-6 pb-3 pt-2' to={item.to}>
               <ListItemText primary={item.name} />
-            </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List> 
@@ -54,7 +54,7 @@ const Navbar = () => {
           menuItems.map(item=>{
             return (
             <li key={item.name}>
-              <Link  to={item.to}>{item.name}</Link> 
+              <Link to={item.to}>{item.name}</Link> 
             </li> 
             )
           })
@@ -69,7 +69,7 @@ const Navbar = () => {
           <IoMdLogIn className='text-3xl text-whiteColor cursor-pointer'></IoMdLogIn>
           {/* <CgMenuRight onClick={toggleDrawer(true)} className='text-3xl text-whiteColor cursor-pointer'></CgMenuRight>  */}
           <Hamburger color="#fff" toggled={open} toggle={setOpen} />
-          <Drawer open={open} onClose={toggleDrawer(false)}>
+          <Drawer open={open} anchor={'right'} onClose={toggleDrawer(false)}>
             {DrawerList}
           </Drawer>
       </div>
