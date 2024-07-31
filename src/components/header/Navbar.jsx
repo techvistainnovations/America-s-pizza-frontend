@@ -18,7 +18,7 @@ import { Fade as Hamburger } from 'hamburger-react'
 
 const menuItems = [
   {name: 'Store Locator', to : 'store-locator'},
-  {name: 'Order Now', to : '/'},
+  {name: 'Order Now', to : 'order-now'},
   {name: 'Franchise Enquiry', to : '/'},
   {name: 'Bulk Orders', to : '/'},
   {name: 'Promo Codes', to : '/'},

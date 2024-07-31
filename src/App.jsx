@@ -10,6 +10,7 @@ import Locations from './Pages/Locations'
 import Blog from './Pages/Blog'
 import StoreLocator from './Pages/Store-locator/StoreLocator'
 import Footer from './components/Footer/Footer'
+import OrderNow from './Pages/Order-Now/OrderNow'
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
    <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='store-locator' element={<StoreLocator/>} />
-    <Route path='Menu' element={<Menu/>} />
+    <Route path='order-now' element={<OrderNow/>} />
     <Route path='Locations' element={<Locations/>} />
     <Route path='About' element={<About/>} />
     <Route path='Blog' element={<Blog/>} />
