@@ -15,13 +15,20 @@ import { IoMdLogIn } from "react-icons/io";
 import { CgMenuRight } from "react-icons/cg";
 import Drawer from '@mui/material/Drawer';
 import { Fade as Hamburger } from 'hamburger-react'
+import SearchBox from '../SearchBox/SearchBox';
+
+import { MdOutlineAddShoppingCart } from "react-icons/md";
+
+import { FaUserCircle } from "react-icons/fa";
+
 
 const menuItems = [
-  {name: 'Store Locator', to : 'store-locator'},
-  {name: 'Order Now', to : 'order-now'},
-  {name: 'Franchise Enquiry', to : '/'},
-  {name: 'Bulk Orders', to : '/'},
-  {name: 'Promo Codes', to : '/'},
+  {id: 1,name: 'Our Menu', to : 'our-menu'},
+  {id: 2, name: 'Store Locator', to : 'store-locator'},
+  {id: 3,name: 'Celebration Order', to : 'celebration-order'},
+  {id: 4,name: 'Order Now', to : 'order-now'},
+  // {id: 5,name: 'Franchise Enquiry', to : '/'},
+  // {id: 6,name: 'Promo Codes', to : '/'},
 ]
 
 
@@ -36,7 +43,7 @@ const Navbar = () => {
     <Box className='mt-[87px]' sx={{ width: 250 }} a role="presentation" onClick={toggleDrawer(false)}>
       <List>
         {menuItems.map((item) => (
-          <ListItem key={item.name} d isablePadding>
+          <ListItem key={item.id} d isablePadding>
             <Link className='pl-6 pb-3 pt-2' to={item.to}>
               <ListItemText primary={item.name} />
             </Link>
@@ -49,19 +56,29 @@ const Navbar = () => {
   return (
     
     <div>
-      <ul className='lg:flex md:hidden hidden gap-6 main-menu'>
+      <ul className='lg:flex items-center md:hidden hidden gap-6 main-menu'>
         { 
           menuItems.map(item=>{
             return (
-            <li key={item.name}>
+            <li key={item.id}>
               <Link to={item.to}>{item.name}</Link> 
             </li> 
             )
           })
         }
         <li>
+          <div className='cursor-pointer pl-6'>
+            <MdOutlineAddShoppingCart className='text-xl'/>
+          </div>
+        </li>
+        <li>
+        <div className='cursor-pointer'>
+            <SearchBox></SearchBox>
+          </div>
+        </li>
+        <li>
           <div className='cursor-pointer'>
-          <IoMdLogIn className='text-xl'></IoMdLogIn>
+              <FaUserCircle></FaUserCircle>
           </div>
         </li>
       </ul>
