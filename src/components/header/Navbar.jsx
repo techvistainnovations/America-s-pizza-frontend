@@ -1,27 +1,13 @@
 import * as React from 'react';
-import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import { Link } from 'react-router-dom'
-import { CiMenuFries } from "react-icons/ci";
-import { IoMdLogIn } from "react-icons/io";
-import { CgMenuRight } from "react-icons/cg";
 import Drawer from '@mui/material/Drawer';
 import { Fade as Hamburger } from 'hamburger-react'
-import SearchBox from '../SearchBox/SearchBox';
-
-import { MdOutlineAddShoppingCart } from "react-icons/md";
-
-import { FaUserCircle } from "react-icons/fa";
 import { SocialFeed } from './Header';
-
+ 
 
 const menuItems = [
   {id: 1,name: 'Our Menu', to : 'our-menu'},

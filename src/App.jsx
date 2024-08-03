@@ -11,6 +11,7 @@ import Blog from './Pages/Blog'
 import StoreLocator from './Pages/Store-locator/StoreLocator'
 import Footer from './components/Footer/Footer'
 import OrderNow from './Pages/Order-Now/OrderNow'
+import OurMenu from './Pages/Our-Menu/OurMenu'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
    <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='store-locator' element={<StoreLocator/>} />
+    <Route path='/our-menu' element={<OurMenu/>} />
     <Route path='order-now' element={<OrderNow/>} />
     <Route path='Locations' element={<Locations/>} />
     <Route path='About' element={<About/>} />

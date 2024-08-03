@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div, s{
     @apply 2xl:!w-[1400px] xl:!w-[1140px] lg:!w-[960px] md:!w-[720px] sm:!w-[540px] !w-full md:!px-3 sm:!px-5 !px-5;
 }
 
+body{
+    @apply bg-bodyColor;
+}
+
 /* main menu for desktop */
 .main-menu li{
     @apply text-whiteColor text-[14px]

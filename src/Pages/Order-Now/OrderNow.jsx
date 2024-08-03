@@ -3,7 +3,7 @@ import React from 'react'
 const OrderNow = () => {
   return (
     <>
-       <div className='container pt-3 mx-auto mt-[87px]'>
+       <div className='container pt-3 mx-auto mt-[142px]'>
             <div className='text-center'>
                 <h2>Burger Farm Online Ordering</h2>
                 <p>Search City or Locality to Start Ordering</p>
