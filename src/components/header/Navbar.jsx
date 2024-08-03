@@ -20,6 +20,7 @@ import SearchBox from '../SearchBox/SearchBox';
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 
 import { FaUserCircle } from "react-icons/fa";
+import { SocialFeed } from './Header';
 
 
 const menuItems = [
@@ -40,15 +41,18 @@ const Navbar = () => {
   };
 
   const DrawerList = (
-    <Box className='mt-[87px]' sx={{ width: 250 }} a role="presentation" onClick={toggleDrawer(false)}>
+    <Box className='mt-[142px]' sx={{ width: 250 }} a role="presentation" onClick={toggleDrawer(false)}>
       <List>
         {menuItems.map((item) => (
           <ListItem key={item.id} d isablePadding>
-            <Link className='pl-6 pb-3 pt-2' to={item.to}>
+            <Link className='pl-3 border-b w-full border-[#f7f7f7] m-0 pb-2 pt-0' to={item.to}>
               <ListItemText primary={item.name} />
             </Link>
           </ListItem>
         ))}
+            <div className='w-full flex pl-6 mt-4 sm:hidden h-[55px]'>
+              <SocialFeed></SocialFeed>
+            </div>
       </List> 
     </Box>
   );
@@ -66,7 +70,7 @@ const Navbar = () => {
             )
           })
         }
-        <li>
+        {/* <li>
           <div className='cursor-pointer pl-6'>
             <MdOutlineAddShoppingCart className='text-xl'/>
           </div>
@@ -80,12 +84,12 @@ const Navbar = () => {
           <div className='cursor-pointer'>
               <FaUserCircle></FaUserCircle>
           </div>
-        </li>
+        </li> */}
       </ul>
       <div className='lg:hidden gap-4 md:flex items-center flex'>
-          <IoMdLogIn className='text-3xl text-whiteColor cursor-pointer'></IoMdLogIn>
+          {/* <IoMdLogIn className='text-3xl text-whiteColor cursor-pointer'></IoMdLogIn> */}
           {/* <CgMenuRight onClick={toggleDrawer(true)} className='text-3xl text-whiteColor cursor-pointer'></CgMenuRight>  */}
-          <Hamburger color="#fff" toggled={open} toggle={setOpen} />
+          <Hamburger size={25} color="#fff" toggled={open} toggle={setOpen} />
           <Drawer open={open} anchor={'right'} onClose={toggleDrawer(false)}>
             {DrawerList}
           </Drawer>

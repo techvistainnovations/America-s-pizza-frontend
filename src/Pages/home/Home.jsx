@@ -9,7 +9,7 @@ import GetAppSection from './sections/GetAppSection';
 const Home = () => {
   return (
     <>
-    <div className='mt-[87px]'>
+    <div className='mt-[142px]'>
       <HomeBanner></HomeBanner>
       <FeaturedItems></FeaturedItems>
       <HomeSlider></HomeSlider>
