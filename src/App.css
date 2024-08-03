@@ -26,8 +26,18 @@ body{
 /* home Banner */ 
 .home_banner{
     /* @apply bg-home-banner-bg bg-cover bg-center; */
-    @apply bg-themeColor bg-cover bg-center;
+    @apply bg-themeColor relative bg-cover bg-center;
 }
+.home_banner::after{
+    content: "";
+    background: rgb(3,52,110);
+background: linear-gradient(120deg, rgba(3,52,110,0.8) 0%, rgba(3,52,110,0.5) 40%, rgba(248,196,58,0.5) 60%, rgba(248,196,58,0.8) 100%);
+    @apply absolute top-0 left-0 w-full h-full opacity-60 z-10
+}
+#myVideo{
+    @apply absolute w-full z-0 h-full object-cover bottom-0
+}
+
 .home_banner::after {
     content: "";
     /* @apply absolute top-0 left-0 bg-fries-icon md:w-[90px] sm:w-[65px] w-[50px] h-full z-10 block bg-contain bg-no-repeat; */
