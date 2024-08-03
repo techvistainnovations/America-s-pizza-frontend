@@ -5,6 +5,7 @@ import HomeSlider from './sections/HomeSlider';
 import BulkOrderBanner from './sections/BulkOrderBanner';
 import LetsGetOrdering from './sections/LetsGetOrdering';
 import GetAppSection from './sections/GetAppSection';
+import NewsLetter from './sections/NewsLetter';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <HomeBanner></HomeBanner>
       <FeaturedItems></FeaturedItems>
       <HomeSlider></HomeSlider>
+      <NewsLetter></NewsLetter>
       <BulkOrderBanner/>
       <LetsGetOrdering></LetsGetOrdering>
       <GetAppSection></GetAppSection>

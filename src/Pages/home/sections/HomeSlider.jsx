@@ -6,9 +6,19 @@ const HomeSlider = () => {
     const responsive = { 
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 2.5,
+            items: 2,
             slidesToSlide: 1 // optional, default to 1.
         },
+        tablet: {
+            breakpoint: { max: 1024, min: 464},
+            items: 1.5,
+            slidesToSlide: 1 // optional, default to 1. 
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1 // optional, default to 1. 
+        }
     };
     return (
         <section className='container mx-auto py-[20px]'>
@@ -32,11 +42,11 @@ const HomeSlider = () => {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px px-1"
             >
-                <div><img draggable="false" className='rounded-xl w-[542px] h-[325px] object-cover' loading="lazy" src="/images/ui/image-614598-1671521691.jpeg" alt="" /></div>
-                <div><img draggable="false" className='rounded-xl w-[542px] h-[325px] object-cover' loading="lazy" src="/images/ui/image-645888-1671521691.jpeg" alt="" /></div>
-                <div><img draggable="false" className='rounded-xl w-[542px] h-[325px] object-cover' loading="lazy" src="/images/ui/image-746571-1671521691.jpeg" alt="" /></div>
-                <div><img draggable="false" className='rounded-xl w-[542px] h-[325px] object-cover' loading="lazy" src="/images/ui/image-852353-1671521691.jpeg" alt="" /></div>
-                <div><img draggable="false" className='rounded-xl w-[542px] h-[325px] object-cover' loading="lazy" src="/images/ui/image-981361-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl object-cover' loading="lazy" src="/images/ui/image-614598-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl object-cover' loading="lazy" src="/images/ui/image-645888-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl object-cover' loading="lazy" src="/images/ui/image-746571-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl object-cover' loading="lazy" src="/images/ui/image-852353-1671521691.jpeg" alt="" /></div>
+                <div><img draggable="false" className='rounded-xl object-cover' loading="lazy" src="/images/ui/image-981361-1671521691.jpeg" alt="" /></div>
             </Carousel>
         </section>
     )

@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, span, p, a, li, label, button, input, td, div, s{
 }
 
 body{
-    @apply bg-bodyColor;
+    @apply bg-bodyColor relative;
 }
 
 /* main menu for desktop */
