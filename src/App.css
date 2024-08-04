@@ -70,6 +70,23 @@ footer h4::after{
     content: "";
     @apply absolute block bottom-0 left-0 w-[50px] h-[1px] bg-whiteColor;
 }
+.menu_item:hover div:first-child::after{
+    transition: all 3000s;
+    background: rgb(0,0,0);
+    background: linear-gradient(13deg, rgba(0,0,0,0.7988445378151261) 0%, rgba(0,0,0,0.5999649859943977) 27%, rgba(0,0,0,0) 100%);
+}
+.menu_item:hover div:last-child{
+    @apply -mt-5;
+}
+.menu_item:hover div:first-child h2{
+    @apply left-1;
+} 
+.menu_item div:first-child::after{ 
+    content: '';
+    background: rgb(0,0,0);
+    background: linear-gradient(13deg, rgba(0,0,0,0.7008053221288515) 0%, rgba(0,0,0,0.5187324929971988) 18%, rgba(0,0,0,0) 100%);
+    @apply absolute h-full transition-all w-full z-10 left-0 top-0 bottom-0 right-0;
+}
 /* .primary-btn{
     @apply bg-themeColor text-whiteColor px-6 py-2 rounded duration-200 hover:drop-shadow-lg;
 } */
