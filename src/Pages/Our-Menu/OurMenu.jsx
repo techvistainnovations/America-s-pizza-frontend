@@ -222,11 +222,11 @@ const OurMenu = () => {
                 <div key={menuItem.id} onClick={handleClickOpen} className='cursor-pointer rounded-2xl hover:drop-shadow-lg transition-all menu_item shadow-sm'>
                   <div className='relative lg:h-60 h-44 overflow-hidden transition-all rounded-t-lg'>
                     <img src={menuItem.coverImage} className='w-full h-full transition-all object-cover' alt="" />
-                    <h2 className='absolute transition-all bottom-3 z-20 left-0 pr-36 p-4 text-whiteColor w-full text-4xl'>{menuItem.title}</h2>
-                    <div className='py-1 text-sm font-semibold rounded-full px-3 absolute bottom-8 right-3 z-20 text-whiteColor bg-[#DA251C]'>{menuItem.items.length - 1}+ Types</div>
+                    <h2 className='absolute transition-all bottom-3 z-20 left-0 lx:pr-36 lg:pr-28 p-4 text-whiteColor w-full lx:text-4xl lg:text-3xl text-2xl'>{menuItem.title}</h2>
+                    <div className='py-1 lg:text-sm text-xs font-semibold rounded-full px-3 absolute bottom-8 right-3 z-20 text-whiteColor bg-[#DA251C]'>{menuItem.items.length - 1}+ Types</div>
                   </div>
                   <div className='p-4 rounded-2xl -mt-4 transition-all relative z-30 bg-whiteColor'>
-                    <p className='text-base allow2Line text-darkbg'>{menuItem.desc}</p>
+                    <p className='ld:text-base md:text-sm text-sm allow2Line text-darkbg'>{menuItem.desc}</p>
                   </div>
                 </div>
               )
