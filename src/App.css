@@ -90,3 +90,8 @@ footer h4::after{
 /* .primary-btn{
     @apply bg-themeColor text-whiteColor px-6 py-2 rounded duration-200 hover:drop-shadow-lg;
 } */
+
+ /* dialog */
+ .dialog-wrapper .MuiDialog-paperScrollPaper{
+    @apply sm:min-w-[450px] min-w-full;
+ }
