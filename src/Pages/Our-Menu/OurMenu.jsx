@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const menuItems = [
   {
@@ -201,15 +201,115 @@ const menuItems = [
         price: '100'
       },
     ]
+  },
+  {
+    id: 8,
+    title: 'Breadstick',
+    desc: `generally pencil-sized sticks of crisp, dry baked bread that originated in the Piedmont region of Italy.`,
+    coverImage: './images/ui/Cheese-Breadstick-Marinara.jpg',
+    items: [
+      {
+        id: 1,
+        title: `Cheese Breadstick`,
+        price: '100' 
+      },
+      {
+        id: 2,
+        title: `Calzone Vegi`,
+        price: '120'
+      },
+      {
+        id: 3,
+        title: `Gralic Breadstick`,
+        price: '100'
+      },
+      {
+        id: 4,
+        title: `Jalapeno Breadstick`,
+        price: '110'
+      },
+      {
+        id: 5,
+        title: `Indian Style Breadstick`,
+        price: '110'
+      },
+      {
+        id: 6,
+        title: `Spl. Stuff Garlic Bread`,
+        price: '130'
+      },
+    ]
+  },
+  {
+    id: 9,
+    title: 'Maggi',
+    desc: `Maggi noodles are dried noodles fused with oil, and sold with a packet of flavorings.`,
+    coverImage: './images/ui/maxresdefault.jpg',
+    items: [
+      {
+        id: 1,
+        title: `Special Punjabi Maggi(M)`,
+        price: '100' 
+      },
+      {
+        id: 2,
+        title: `Special Punjabi Maggi(L)`,
+        price: '150' 
+      }
+    ]
+  },
+  {
+    id: 10,
+    title: 'Pasta',
+    desc: `Pasta is a type of food that's usually made from an unleavened dough of flour and water or eggs, and formed into various shapes. `,
+    coverImage: './images/ui/pasta.jpg',
+    items: [
+      {
+        id: 1,
+        title: `White Sauce Pasta(M)`,
+        price: '100'
+      },
+      {
+        id: 2,
+        title: `White Sauce Pasta(L)`,
+        price: '130'
+      },
+      {
+        id: 3,
+        title: `Red Sauce Pasta(M)`,
+        price: '110'
+      },
+      {
+        id: 4,
+        title: `Red Sauce Pasta(L)`,
+        price: '130'
+      },
+      {
+        id: 5,
+        title: `Mix Sauce Pasta(M)`,
+        price: '110'
+      },
+      {
+        id: 6,
+        title: `Mix Sauce Pasta(L)`,
+        price: '150'
+      },
+    ]
   }
 ]
 
 const OurMenu = () => {
-  const [open, setOpen] = React.useState(false);
+  
+  const [dialog, updateDialog] = useState({
+    isOpen : false,
+    data : {},
+    updateDialog : updateDialog,
+    dialog : dialog
+  })
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+  const handleClickOpen = () =>{
+    
+  }
 
   return (
     <div className='mt-[148px]'>
