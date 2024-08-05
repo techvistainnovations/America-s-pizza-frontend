@@ -36,7 +36,8 @@ const Footer = () => {
                         <div>
                             <h4>Address</h4>
                             <div>
-                                <p className='leading-6 text-sm text-whiteColor font-normal'>Plot No.9, Shop No.2-3, Tilak Nagar, Raja Park, Opposite Lbs College, Jaipur, Jaipur, Rajasthan, 302004</p>
+                                <p className='leading-6 text-sm text-whiteColor font-normal'>branch 102 H Block diggi sgnr </p>
+                                <p className='leading-6 text-sm text-whiteColor font-normal'>branch 3rd Floor Ridhi sidhi mall sgnr</p>
                             </div>
                         </div>
                         <div>
@@ -46,14 +47,12 @@ const Footer = () => {
                                     <li className='flex mb-2 gap-2'>
                                         <MdOutlineMailOutline className='pt-1 min-w-[24px] text-base text-whiteColor' />
                                         <a href="mailto:customercare@burgerfarm.in" className=' break-all flex items-center gap-1 text-xs text-whiteColor font-normal'>
-                                            customercare@burgerfarm.in
+                                            customer@americanspizza.in
                                         </a>
                                     </li>
                                     <li className='flex gap-2'>
                                         <FiPhone className='pt-1 min-w-[24px] text-base text-whiteColor' />
-                                        <a href="tel:9928570022" className='leading-6 flex items-center gap-1 text-xs text-whiteColor font-normal'>
-                                            9928570022
-                                        </a>
+                                        <a href="tel:97838 00025" className='leading-6 flex items-center gap-1 text-xs text-whiteColor font-normal'>+91 97838 00025</a>
                                     </li>
                                 </ul>
                             </div>
