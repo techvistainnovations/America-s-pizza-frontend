@@ -21,7 +21,7 @@ const HomeSlider = () => {
         }
     };
     return (
-        <section className='container mx-auto py-[20px]'>
+        <section className='container mt-12 mx-auto py-[20px]'>
             <Carousel
                 swipeable={true}
                 draggable={true}

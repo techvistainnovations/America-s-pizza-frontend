@@ -12,8 +12,8 @@ const Home = () => {
     <>
     <div className='mt-[142px]'>
       <HomeBanner></HomeBanner>
-      <FeaturedItems></FeaturedItems>
       <HomeSlider></HomeSlider>
+      <FeaturedItems></FeaturedItems>
       <NewsLetter></NewsLetter>
       <BulkOrderBanner/>
       <LetsGetOrdering></LetsGetOrdering>
