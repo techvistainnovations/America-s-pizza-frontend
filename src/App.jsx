@@ -23,7 +23,7 @@ function App() {
   const showHideChatBox = ()=>{
     if(isChatBoxShow)
     updateChatBox(false)
-    else
+    else 
     updateChatBox(true)
   }
 
