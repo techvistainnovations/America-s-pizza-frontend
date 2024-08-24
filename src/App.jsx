@@ -16,6 +16,7 @@ import { IoChatboxEllipsesSharp } from 'react-icons/io5'
 import { useState } from 'react'
 import Login from './Pages/Auth/Login/Login'
 import Register from './Pages/Auth/Register/Register'
+import CartPage from './Pages/Cart/Cart'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         }
     /> */}
     <Route path='/' element={<Home/>} />
+    <Route path='/cart' element={<CartPage/>} />
     <Route path='store-locator' element={<StoreLocator/>} />
     <Route path='/our-menu' element={<OurMenu/>} />
     <Route path='order-now' element={<OrderNow/>} />

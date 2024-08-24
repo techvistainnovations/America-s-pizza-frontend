@@ -73,7 +73,9 @@ const TopBar = () => {
             <ul className='flex sm:justify-end justify-between flex-1 sm:flex-none items-center gap-4'>
               <li>
                 <div className='cursor-pointer text-themeColor'>
-                  <MdOutlineAddShoppingCart className='text-xl' />
+                  <Link to={'/cart'}>
+                    <MdOutlineAddShoppingCart className='text-xl' />
+                  </Link>
                 </div>
               </li>
               <li className='sm:hidden block'>
