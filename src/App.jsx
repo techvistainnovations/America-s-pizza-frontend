@@ -14,6 +14,8 @@ import OrderNow from './Pages/Order-Now/OrderNow'
 import OurMenu from './Pages/Our-Menu/OurMenu'
 import { IoChatboxEllipsesSharp } from 'react-icons/io5'
 import { useState } from 'react'
+import Login from './Pages/Auth/Login/Login'
+import Register from './Pages/Auth/Register/Register'
 
 
 function App() {
@@ -27,11 +29,21 @@ function App() {
     updateChatBox(true)
   }
 
+  const token = localStorage.getItem('token');
+
   return (
     <>
    <BrowserRouter>
    <Header/>
    <Routes>
+    <Route path="/login" element={<Login/>} />
+    <Route path="/register" element={<Register/>} />
+    {/* <Route
+        path="/"
+        render={() =>
+            token ? <Home /> : <Redirect to="/login" />
+        }
+    /> */}
     <Route path='/' element={<Home/>} />
     <Route path='store-locator' element={<StoreLocator/>} />
     <Route path='/our-menu' element={<OurMenu/>} />
