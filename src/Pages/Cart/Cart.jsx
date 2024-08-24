@@ -5,24 +5,48 @@ import { motion } from 'framer-motion';
 
 const CartPage = () => {
     const items = [
+        // {
+        //     id: 1,
+        //     name: 'Basic Tee',
+        //     color: 'Sienna',
+        //     size: 'Large',
+        //     price: 32.00,
+        //     image: '/path-to-image/sienna-shirt.png',
+        //     availability: 'In stock'
+        // },
+        // {
+        //     id: 2,
+        //     name: 'Basic Tee',
+        //     color: 'Black',
+        //     size: 'Large',
+        //     price: 32.00,
+        //     image: '/path-to-image/black-shirt.png',
+        //     availability: 'Ships in 3-4 weeks'
+        // }
         {
-            id: 1,
-            name: 'Basic Tee',
-            color: 'Sienna',
-            size: 'Large',
-            price: 32.00,
-            image: '/path-to-image/sienna-shirt.png',
-            availability: 'In stock'
+            id : 7,
+            name : 'Farm Aloo Tikki Meal',
+            desc : 'Elevate your Farm Aloo Tikki burger to a meal',
+            image : '/images/ui/image-914849-1644511269.jpeg',
+            currency : '₹',
+            price : 115,
+            fakePrice : '',
+            isVegFlag : 0,
+            availability: 'Ships in 3-4 weeks',
+            isAddedToCart : false,
         },
         {
-            id: 2,
-            name: 'Basic Tee',
-            color: 'Black',
-            size: 'Large',
-            price: 32.00,
-            image: '/path-to-image/black-shirt.png',
-            availability: 'Ships in 3-4 weeks'
-        }
+            id : 8,
+            name : 'Farm Spicy Chicken Wrap',
+            desc : 'Spicy chicken patty served whole in this wrap',
+            image : '/images/ui/image-833968-1644510327.jpeg',
+            currency : '₹',
+            price : 172,
+            fakePrice : '299',
+            isVegFlag : 2,
+            availability: 'Ships in 3-4 weeks',
+            isAddedToCart : false,
+        },
     ];
 
     const totalPrice = items.reduce((acc, item) => acc + item.price, 0);
@@ -43,13 +67,13 @@ const CartPage = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5 }}
                                     elevation={3}
-                                    sx={{ display: 'flex', alignItems: 'center', p: 2, mb: 2 }}
+                                    sx={{ display: 'flex', alignItems: 'start', p: 2, mb: 2 }}
                                 >
-                                    <img src={item.image} alt={item.name} style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '8px' }} />
+                                    <img src={item.image} alt={item.name} style={{ width: '80px', height: '80px', objectFit: 'cover', aspectRatio : '1/1', borderRadius: '8px' }} />
                                     <Box sx={{ flexGrow: 1, ml: 2 }}>
                                         <Typography variant="h6">{item.name}</Typography>
                                         <Typography variant="body2" color="textSecondary">
-                                            {item.color}, {item.size}
+                                            {item.desc}
                                         </Typography>
                                         <Typography variant="body1" sx={{ mt: 1 }}>${item.price.toFixed(2)}</Typography>
                                         <Typography variant="body2" color={item.availability === 'In stock' ? 'green' : 'gray'}>
