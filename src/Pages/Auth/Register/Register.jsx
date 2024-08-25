@@ -2,6 +2,7 @@ import { InputAdornment, IconButton, Input, Snackbar, Alert } from '@mui/materia
 import React, { useState } from 'react';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import CustomSnackbar from '../../../components/CustomSnackbar/CustomSnackbar';
 
 const Register = () => {
     const [name, setName] = useState('');
@@ -13,7 +14,8 @@ const Register = () => {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [error, setError] = useState('');
     const [openSnackbar, setOpenSnackbar] = useState(false);
-
+    const [snackbarSeverity, setSnackbarSeverity] = useState('error'); // Add severity state
+    
     const validateEmail = (email) => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
@@ -24,24 +26,28 @@ const Register = () => {
 
         if (!name || !lastname || !email || !password || !confirmPassword) {
             setError('All fields are required');
+            setSnackbarSeverity('error');
             setOpenSnackbar(true);
             return;
         }
 
         if (!validateEmail(email)) {
             setError('Invalid email format');
+            setSnackbarSeverity('error');
             setOpenSnackbar(true);
             return;
         }
 
         if (password.length < 6) {
             setError('Password must be at least 6 characters long');
+            setSnackbarSeverity('error');
             setOpenSnackbar(true);
             return;
         }
 
         if (password !== confirmPassword) {
             setError('Passwords do not match');
+            setSnackbarSeverity('error');
             setOpenSnackbar(true);
             return;
         }
@@ -75,8 +81,8 @@ const Register = () => {
     };
 
     return (
-        <div className='mt-[148px] py-12'>
-            <div className="relative mx-auto w-full max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-themeColor sm:rounded-xl sm:px-10">
+        <div className='mt-[148px] container mx-auto md:py-12 py-0'>
+            <div className="relative mx-auto w-full max-w-md bg-white py-6 md:shadow-xl shadow-none md:ring-1 ring-0 ring-themeColor sm:rounded-xl sm:px-10">
                 <div className="w-full">
                     <div className="text-center">
                         <h1 className="text-3xl mb-2 font-semibold text-gray-900">Sign up</h1>
@@ -184,11 +190,12 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-            <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
-                <Alert onClose={handleCloseSnackbar} severity="error" sx={{ width: '100%' }}>
-                    {error}
-                </Alert>
-            </Snackbar>
+            <CustomSnackbar 
+                open={openSnackbar} 
+                handleClose={handleCloseSnackbar} 
+                message={error} 
+                severity={snackbarSeverity} 
+            />
         </div>
     );
 };
