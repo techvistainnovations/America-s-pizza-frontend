@@ -105,6 +105,9 @@ footer h4::after{
     background: linear-gradient(13deg, rgba(0,0,0,0.7008053221288515) 0%, rgba(0,0,0,0.5187324929971988) 18%, rgba(0,0,0,0) 100%);
     @apply absolute h-full transition-all w-full z-10 left-0 top-0 bottom-0 right-0;
 }
+.MuiPaper-root{
+    @apply !z-[99]
+}
 /* .primary-btn{
     @apply bg-themeColor text-whiteColor px-6 py-2 rounded duration-200 hover:drop-shadow-lg;
 } */

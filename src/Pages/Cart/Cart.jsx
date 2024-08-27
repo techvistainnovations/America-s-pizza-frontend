@@ -17,8 +17,8 @@ const CartPage = () => {
     const items = [
         {
             id : 7,
-            name : 'Farm Aloo Tikki Meal',
-            desc : 'Elevate your Farm Aloo Tikki burger to a meal',
+            name : 'pizza Aloo Tikki Meal',
+            desc : 'Elevate your pizza Aloo Tikki burger to a meal',
             image : '/images/ui/image-914849-1644511269.jpeg',
             currency : '₹',
             price : 115,
@@ -29,7 +29,7 @@ const CartPage = () => {
         },
         {
             id : 8,
-            name : 'Farm Spicy Chicken Wrap',
+            name : 'pizza Spicy Chicken Wrap',
             desc : 'Spicy chicken patty served whole in this wrap',
             image : '/images/ui/image-833968-1644510327.jpeg',
             currency : '₹',

@@ -102,6 +102,7 @@ const TopBar = () => {
                 <Menu
                   anchorEl={anchorEl}
                   id="account-menu"
+                  className='!z-[999999]'
                   open={open}
                   onClose={handleClose}
                   onClick={handleClose}
@@ -180,7 +181,7 @@ const Header = () => {
  
   return (
     <>
-      <div className='fixed top-0 left-0 right-0 z-[99]'>
+      <div className='fixed top-0 left-0 right-0 z-[9999]'>
         <TopBar></TopBar>
         <header className='bg-themeColor  w-full py-4 drop-shadow-md'>
           <div className='container mx-auto'>

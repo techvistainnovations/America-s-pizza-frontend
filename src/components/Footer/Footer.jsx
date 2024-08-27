@@ -46,13 +46,13 @@ const Footer = () => {
                                 <ul>
                                     <li className='flex mb-2 gap-2'>
                                         <MdOutlineMailOutline className='pt-1 min-w-[24px] text-base text-whiteColor' />
-                                        <a href="mailto:customercare@burgerfarm.in" className=' break-all flex items-center gap-1 text-xs text-whiteColor font-normal'>
+                                        <a href="mailto:customercare@americanspizza.in" className=' break-all flex items-center gap-1 text-xs text-whiteColor font-normal'>
                                             customer@americanspizza.in
                                         </a>
                                     </li>
                                     <li className='flex gap-2'>
                                         <FiPhone className='pt-1 min-w-[24px] text-base text-whiteColor' />
-                                        <a href="tel:97838 00025" className='leading-6 flex items-center gap-1 text-xs text-whiteColor font-normal'>+91 97838 00025</a>
+                                        <a href="tel:9982500097" className='leading-6 flex items-center gap-1 text-xs text-whiteColor font-normal'>+91 99825 00097</a>
                                     </li>
                                 </ul>
                             </div>

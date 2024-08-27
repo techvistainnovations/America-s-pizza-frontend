@@ -67,7 +67,7 @@ const LocationCom = () => {
 const StoreLocator = () => {
   return (
     <section className='container pt-3 mx-auto mt-[142px]  lg:mb-12 md:mb-6 sm:mb-4 mb-4'>
-        <h2 className='lg:text-4xl md:text-3xl text-2xl text-darkbg font-semibold md:leading-[65px] sm:leading-10'>Burger Farm Outlets Near You</h2>
+        <h2 className='lg:text-4xl md:text-3xl text-2xl text-darkbg font-semibold md:leading-[65px] sm:leading-10'>Americans pizza Outlets Near You</h2>
         <div className='flex lg:gap-8 md:gap-4 mt-4'>
             {/* Popular Cities */}
             <div className='w-1/4 md:block sm:hidden hidden'>

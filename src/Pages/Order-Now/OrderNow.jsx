@@ -5,7 +5,7 @@ const OrderNow = () => {
     <>
        <div className='container pt-3 mx-auto mt-[142px]'>
             <div className='text-center'>
-                <h2>Burger Farm Online Ordering</h2>
+                <h2>Americans Pizza Online Ordering</h2>
                 <p>Search City or Locality to Start Ordering</p>
                 <div>
                     <input type="search" placeholder='Enter city or locality'/>

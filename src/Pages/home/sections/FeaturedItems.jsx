@@ -26,8 +26,8 @@ const featuredItem = [
     },
     {
         id : 3,
-        title : 'Farm Aloo Tikki Meal',
-        desc : 'Elevate your Farm Aloo Tikki burger to a meal',
+        title : 'pizza Aloo Tikki Meal',
+        desc : 'Elevate your pizza Aloo Tikki burger to a meal',
         image : '/images/ui/image-914849-1644511269.jpeg',
         currency : '₹',
         price : '115',
@@ -37,7 +37,7 @@ const featuredItem = [
     },
     {
         id : 4,
-        title : 'Farm Spicy Chicken Wrap',
+        title : 'pizza Spicy Chicken Wrap',
         desc : 'Spicy chicken patty served whole in this wrap',
         image : '/images/ui/image-833968-1644510327.jpeg',
         currency : '₹',
@@ -48,7 +48,7 @@ const featuredItem = [
     },
     {
         id : 5,
-        title : 'Farm Grilled Chicken',
+        title : 'pizza Grilled Chicken',
         desc : 'Experience the perfect harmony of flavors in our',
         image : '/images/ui/image-423541-1677054193.jpeg',
         currency : '₹',
@@ -70,8 +70,8 @@ const featuredItem = [
     },
     {
         id : 7,
-        title : 'Farm Aloo Tikki Meal',
-        desc : 'Elevate your Farm Aloo Tikki burger to a meal',
+        title : 'pizza Aloo Tikki Meal',
+        desc : 'Elevate your pizza Aloo Tikki burger to a meal',
         image : '/images/ui/image-914849-1644511269.jpeg',
         currency : '₹',
         price : '115',
@@ -81,7 +81,7 @@ const featuredItem = [
     },
     {
         id : 8,
-        title : 'Farm Spicy Chicken Wrap',
+        title : 'pizza Spicy Chicken Wrap',
         desc : 'Spicy chicken patty served whole in this wrap',
         image : '/images/ui/image-833968-1644510327.jpeg',
         currency : '₹',
@@ -92,7 +92,7 @@ const featuredItem = [
     },
     {
         id : 9,
-        title : 'Farm Grilled Chicken',
+        title : 'pizza Grilled Chicken',
         desc : 'Experience the perfect harmony of flavors in our',
         image : '/images/ui/image-423541-1677054193.jpeg',
         currency : '₹',
