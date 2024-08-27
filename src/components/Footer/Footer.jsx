@@ -52,7 +52,7 @@ const Footer = () => {
                                     </li>
                                     <li className='flex gap-2'>
                                         <FiPhone className='pt-1 min-w-[24px] text-base text-whiteColor' />
-                                        <a href="tel:9982500097" className='leading-6 flex items-center gap-1 text-xs text-whiteColor font-normal'>+91 99825 00097</a>
+                                        <a href="tel:9929277633" className='leading-6 flex items-center gap-1 text-xs text-whiteColor font-normal'>+91 9929277633</a>
                                     </li>
                                 </ul>
                             </div>
