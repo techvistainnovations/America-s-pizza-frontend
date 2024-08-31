@@ -36,8 +36,8 @@ const Footer = () => {
                         <div>
                             <h4>Address</h4>
                             <div>
-                                <p className='leading-6 text-sm text-whiteColor font-normal'>branch 102 H Block diggi sgnr </p>
-                                <p className='leading-6 text-sm text-whiteColor font-normal'>branch 3rd Floor Ridhi sidhi mall sgnr</p>
+                                <p className='leading-6 capitalize text-sm text-whiteColor font-normal'>branch 102 H Block diggi Sri Ganganagar 335001 </p>
+                                <p className='leading-6 capitalize text-sm text-whiteColor font-normal'>branch 3rd Floor Ridhi sidhi mall Sri Ganganagar 335001</p>
                             </div>
                         </div>
                         <div>
@@ -47,7 +47,7 @@ const Footer = () => {
                                     <li className='flex mb-2 gap-2'>
                                         <MdOutlineMailOutline className='pt-1 min-w-[24px] text-base text-whiteColor' />
                                         <a href="mailto:customercare@americanspizza.in" className=' break-all flex items-center gap-1 text-xs text-whiteColor font-normal'>
-                                            customer@americanspizza.in
+                                            americaspizzawithatwist@gmail.com
                                         </a>
                                     </li>
                                     <li className='flex gap-2'>

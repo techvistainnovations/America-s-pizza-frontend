@@ -1,5 +1,6 @@
 import React from 'react'
 import FeaturedItem from './FeaturedItem'
+import { Link } from 'react-router-dom'
 
 const featuredItem = [
     {
@@ -120,7 +121,7 @@ const FeaturedItems = () => {
             </div>
             <div className='flex justify-center pt-6'>
                 <button className='primary_btn uppercase'>
-                    Explore Full Menu
+                    <Link to={'/our-menu'}>Explore Full Menu</Link>
                 </button>
             </div>
         </div>
